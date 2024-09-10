@@ -10,7 +10,10 @@ function ListGroup({ items, onSelectedItem }: ListGroupProps) {
   return (
     <>
       {items.length === 0 && <p>No item found</p>}
-      <ul className="list-group" style={{ width: "250px" }}>
+      <ul
+        className="list-group card p-2 rounded-0 shadow-sm"
+        style={{ width: "250px" }}
+      >
         {items.map((item, index) => (
           <li
             key={index}
